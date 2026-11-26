@@ -1,4 +1,25 @@
-// A working best-game-01 entry (Node 22, standard library only): the game is this directory's
+// SKY COURIER — Island Mail Run
+// -------------------------------
+// A small courier flight across a chain of islands. You fly a mail plane
+// through eight glowing delivery rings, in order, then bring the plane
+// down gently on the home airstrip before the clock runs out. Each ring
+// crossed is one parcel delivered; a clean landing with every ring
+// collected is a perfect run, and the score rewards speed as well as
+// accuracy. Miss a ring, clip the sea, or land too hard and the run ends.
+//
+// Controls are deliberately simple: steer with the arrow keys (or WASD),
+// throttle with Shift for a burst of speed, and pause with P. The plane
+// banks as it turns, the camera follows from behind, and a compass strip
+// at the top of the screen always points at the next ring so you never
+// have to guess where to fly next.
+//
+// What this file does: it is the submission entrypoint. It copies the
+// finished game (game/) and its screenshots (screenshots/) next to this
+// file into the grader's output folder, then writes dossier.json there
+// through buildDossier — a fixed summary of the game, its files, and its
+// metadata. The dossier is built purely from the files on disk, so
+// re-running this file always produces the exact same dossier bytes.
+
 // game/ folder, plain static files a desktop browser loads offline (game/index.html and its ES
 // modules, no library and no network request), and the program hands it in. It copies game/ and
 // screenshots/ from beside this file to /output and writes /output/dossier.json, the summary the
